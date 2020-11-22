@@ -1,65 +1,42 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <article className="prose-lg container max-w-4xl px-10 mx-auto mt-20">
+      <h1>Demo code to show up styles not being merged</h1>
+      <pre>
+        <ul>
+          <li>The color was supposed to be #111 but it's #000</li>
+          <li>The anchor was supposed to be be blue (#3182ce)</li>
+        </ul>
+      </pre>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestias
+        numquam nobis eos ab, similique laborum molestiae maxime quia pariatur
+        voluptatibus, est repellendus excepturi vitae perspiciatis inventore
+        adipisci nesciunt voluptas! Delectus cum hic quibusdam eveniet facere
+        doloremque quia explicabo voluptates accusantium sunt, culpa, suscipit
+        excepturi quas saepe quisquam aperiam dolorem temporibus nam ratione
+        tenetur fuga laudantium fugiat rem! Tempore, exercitationem? Tempore
+        maxime dolore deleniti corrupti, facere eligendi fugiat sed ea et amet,
+        accusamus ratione rerum non sequi magnam? Corporis, ea laudantium? Eaque
+        officiis doloribus omnis laborum, ut nam at modi? Ad, voluptas in sequi
+        est, reprehenderit rem officiis, eum debitis iste eius alias culpa
+        architecto itaque rerum accusantium laudantium mollitia minus velit hic
+        libero quas consequuntur vero accusamus! Odit, doloremque? Dignissimos
+        sapiente tempora eum consequatur eveniet, iusto repudiandae consequuntur
+        quod rerum nisi nobis eligendi, quos aliquam! Doloremque in, optio quia,
+        non assumenda exercitationem doloribus, rerum rem ad labore officia
+        itaque.
+      </p>
+      <a href="https://google.com">Link to google google.com</a>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <blockquote>Some reference</blockquote>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+      <h2>Weird list</h2>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </article>
+  );
 }
